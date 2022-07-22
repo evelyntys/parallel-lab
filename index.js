@@ -26,7 +26,7 @@ app.use(
 const landingRoutes = require('./routes/landing');
 app.use('/', landingRoutes)
 
-app.use('/', require('./routes.landing'))
+// app.use('/', require('./routes.landing'))
 
 // app.get('/', function(req,res){
 //     res.send('hello')
