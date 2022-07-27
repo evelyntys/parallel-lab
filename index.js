@@ -24,7 +24,9 @@ app.use(
 
 // './' means same directory as current index.js
 const landingRoutes = require('./routes/landing');
-app.use('/', landingRoutes)
+const posterRoutes = require('./routes/posters')
+app.use('/', landingRoutes);
+app.use('/posters', posterRoutes)
 
 // app.use('/', require('./routes.landing'))
 
